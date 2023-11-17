@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.3 on win32)" generated="20230831 20:57:55.764" rpa="false" schemaversion="4">
+<suite id="s1" name="TC1" source="C:\Users\HP\PycharmProjects\RobotFramework\setup and teardown operations\TC1.robot">
+<test id="s1-t1" name="setup and teardown operation:" line="14">
+<kw name="Start Browser and Maximize" library="Resources3" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230831 20:57:56.273" level="INFO">Opening browser 'Chrome' to base url 'https://practice.automationtesting.in/my-account/'.</msg>
+<status status="PASS" starttime="20230831 20:57:56.272" endtime="20230831 20:58:13.034"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230831 20:58:13.034" endtime="20230831 20:58:13.422"/>
+</kw>
+<status status="PASS" starttime="20230831 20:57:56.272" endtime="20230831 20:58:13.422"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>varniktech@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230831 20:58:13.426" level="INFO">Typing text 'varniktech@gmail.com' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20230831 20:58:13.424" endtime="20230831 20:58:16.289"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>varnik@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230831 20:58:16.291" level="INFO">Typing text 'varnik@123' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230831 20:58:16.290" endtime="20230831 20:58:16.530"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>name:login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230831 20:58:16.532" level="INFO">Clicking button 'name:login'.</msg>
+<status status="PASS" starttime="20230831 20:58:16.531" endtime="20230831 20:58:18.153"/>
+</kw>
+<kw name="close Browser Window" library="Resources3" type="TEARDOWN">
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230831 20:58:18.417" level="INFO">${Title} = My Account – Automation Practice Site</msg>
+<status status="PASS" starttime="20230831 20:58:18.158" endtime="20230831 20:58:18.483"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230831 20:58:18.484" level="INFO">My Account – Automation Practice Site</msg>
+<status status="PASS" starttime="20230831 20:58:18.484" endtime="20230831 20:58:18.484"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230831 20:58:18.484" endtime="20230831 20:58:22.934"/>
+</kw>
+<status status="PASS" starttime="20230831 20:58:18.157" endtime="20230831 20:58:22.934"/>
+</kw>
+<status status="PASS" starttime="20230831 20:57:56.271" endtime="20230831 20:58:22.943"/>
+</test>
+<test id="s1-t2" name="Test case 2:" line="22">
+<kw name="Start Browser and Maximize" library="Resources3" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230831 20:58:22.951" level="INFO">Opening browser 'Chrome' to base url 'https://practice.automationtesting.in/my-account/'.</msg>
+<status status="PASS" starttime="20230831 20:58:22.950" endtime="20230831 20:58:34.622"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230831 20:58:34.623" endtime="20230831 20:58:34.988"/>
+</kw>
+<status status="PASS" starttime="20230831 20:58:22.949" endtime="20230831 20:58:34.988"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>varniktech@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230831 20:58:34.990" level="INFO">Typing text 'varniktech@gmail.com' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20230831 20:58:34.989" endtime="20230831 20:58:37.719"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>varnik@12</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230831 20:58:37.720" level="INFO">Typing text 'varnik@12' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230831 20:58:37.719" endtime="20230831 20:58:38.009"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>name:login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230831 20:58:38.013" level="INFO">Clicking button 'name:login'.</msg>
+<status status="PASS" starttime="20230831 20:58:38.012" endtime="20230831 20:58:40.442"/>
+</kw>
+<kw name="close Browser Window" library="Resources3" type="TEARDOWN">
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230831 20:58:42.507" level="INFO">${Title} = My Account – Automation Practice Site</msg>
+<status status="PASS" starttime="20230831 20:58:40.483" endtime="20230831 20:58:42.507"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230831 20:58:42.507" level="INFO">My Account – Automation Practice Site</msg>
+<status status="PASS" starttime="20230831 20:58:42.507" endtime="20230831 20:58:42.507"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230831 20:58:42.508" endtime="20230831 20:58:45.790"/>
+</kw>
+<status status="PASS" starttime="20230831 20:58:40.482" endtime="20230831 20:58:45.790"/>
+</kw>
+<status status="PASS" starttime="20230831 20:58:22.949" endtime="20230831 20:58:45.791"/>
+</test>
+<doc>This file having testcase of testing ABC functionality</doc>
+<status status="PASS" starttime="20230831 20:57:55.768" endtime="20230831 20:58:45.792"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="TC1">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
