@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.3 on win32)" generated="20230831 21:19:48.665" rpa="false" schemaversion="4">
+<suite id="s1" name="TC4" source="C:\Users\HP\PycharmProjects\RobotFramework\userdefined keywords\TC4.robot">
+<test id="s1-t1" name="Add Documentation" line="11">
+<kw name="Start Browser and Maximize" library="Resources2">
+<var>${Res}</var>
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>This keyword is to start and maximize the browser window</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${UserURL}</arg>
+<arg>${InputBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230831 21:19:49.121" level="INFO">Opening browser 'Chrome' to base url 'https://practice.automationtesting.in/my-account/'.</msg>
+<status status="PASS" starttime="20230831 21:19:49.120" endtime="20230831 21:20:00.219"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230831 21:20:00.219" endtime="20230831 21:20:00.507"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230831 21:20:00.903" level="INFO">${Title} = My Account – Automation Practice Site</msg>
+<status status="PASS" starttime="20230831 21:20:00.507" endtime="20230831 21:20:00.907"/>
+</kw>
+<msg timestamp="20230831 21:20:00.908" level="INFO">${Res} = My Account – Automation Practice Site</msg>
+<status status="PASS" starttime="20230831 21:19:49.119" endtime="20230831 21:20:00.908"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Res}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230831 21:20:00.909" level="INFO">My Account – Automation Practice Site</msg>
+<status status="PASS" starttime="20230831 21:20:00.908" endtime="20230831 21:20:00.909"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>${Res}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230831 21:20:00.910" level="INFO">Typing text 'My Account – Automation Practice Site' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20230831 21:20:00.909" endtime="20230831 21:20:01.839"/>
+</kw>
+<doc>This test case is used to check the login functionality</doc>
+<status status="PASS" starttime="20230831 21:19:49.118" endtime="20230831 21:20:01.840"/>
+</test>
+<doc>This file having testcase of testing ABC functionality</doc>
+<status status="PASS" starttime="20230831 21:19:48.668" endtime="20230831 21:20:01.842"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC4">TC4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
